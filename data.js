@@ -23,7 +23,6 @@ const audiences = [
 // 영화 객체 10건
 
 const movies = [
-  // 1~5번: 내 인생 영화 5편 (관객수는 0, type은 "mine", rank는 null)
   {
     title: "스파이더맨: 브랜드 뉴 데이", year: 2026, date: "2026-01-01", rating: 8.2,
     audience: 0, poster: "/mt6uZzy7DAsncHlGGzMsyNgLR6v.jpg", type: "mine", rank: null

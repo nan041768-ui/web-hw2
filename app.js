@@ -90,7 +90,7 @@ function filterByRating(list, min) {
 // 4. sortBy : 배열, 키 이름, 내림차순 여부 (참/거짓)
 function sortBy(list, key, desc) {
     return [...list].sort((a, b) => {
-        const sign = desc ? -1 : 1; // desc가 참(true)이면 내림차순(-1 곱하기)
+        const sign = desc ? -1 : 1; 
         
         if (typeof a[key] === "string") {
             // 제목, 다른 글 ...: 가나다순
