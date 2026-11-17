@@ -118,10 +118,10 @@ function search(list, keyword) {
 }
 
 // 6. formatNumber : 숫자나 숫자 문자열 -> 쉼표가 찍힌 글자
+// 6. formatNumber : 숫자나 숫자 문자열 -> 쉼표가 찍힌 글자
 function formatNumber(n) {
     return Number(n).toLocaleString("ko-KR");
 }
-
 // 7. yearsSince : 날짜 문자열 -> 올해까지 몇 년(숫자)
 function yearsSince(dateStr) {
     const currentYear = new Date().getFullYear(); // 올해 연도 (2026)
@@ -174,6 +174,8 @@ function averageBy(list, key) {
 // 3. 콘솔 창에 결과 출력하기 (C1 ~ C4)
 console.log("C1 page " + TMDB.page + ", total_pages " + TMDB.total_pages + ", total_results " + TMDB.total_results + ", 이번 응답 " + getList(TMDB).length + "편");
 console.log("C2 상영작 평균 평점: " + averageBy(getList(TMDB), "vote_average").toFixed(1));
+
+console.log("A5 관객 100만 이상: " + formatNumber(n));
 
 // (주의) 아래 C3 표와 C4 검색 결과 출력은 Part B에서 만든 sortBy, search 도구가 필요합니다!
 // console.table(sortBy(getList(TMDB), "vote_average", true).slice(0, 5), ["title", "release_date", "vote_average"]);
